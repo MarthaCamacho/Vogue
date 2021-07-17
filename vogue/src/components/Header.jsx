@@ -2,44 +2,58 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Button } from './Button';
+import { Nav } from './Nav';
 import '../styles/header.scss';
 
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
-  <header>
-    <div className="wrapper">
-      <div>
-        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" fillRule="evenodd">
-            <path
-              d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
-              fill="#FFF"
-            />
-            <path
-              d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
-              fill="#555AB9"
-            />
-            <path
-              d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z"
-              fill="#91BAF8"
-            />
-          </g>
-        </svg>
-        <h1>Acme</h1>
+export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => {
+  const itemsNav = [
+    {
+      linkItem: '#',
+      item: 'FASHION'
+    },
+    {
+      linkItem: '#',
+      item: 'BEAUTY'
+    },
+    {
+      linkItem: '#',
+      item: 'CULTURE'
+    },
+    {
+      linkItem: '#',
+      item: 'LIVING'
+    },
+    {
+      linkItem: '#',
+      item: 'RUNWAY'
+    },
+    {
+      linkItem: '#',
+      item: 'SHOPPING'
+    },
+    {
+      linkItem: '#',
+      item: 'VIDEO'
+    }
+  ]
+
+  return (
+    <header>
+      <div className="header">
+        <div className="header-titleSection">
+          <img src="logoVogue.svg" alt="Logo" />
+        </div>
+        <div className="header-optionSection">
+          <a href='#'>SIGN IN</a>
+          <a href='#'>SUSCRIBE</a>
+          <img src="searchIcon.svg" alt="SearchIcon" />
+        </div>
       </div>
-      <div>
-        {user ? (
-          <Button size="small" onClick={onLogout} label="Log out" />
-        ) : (
-          <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
-          </>
-        )}
-      </div>
-    </div>
-  </header>
-);
+      <Nav itemsNav={itemsNav} />
+    </header>
+  );
+};
 
 Header.propTypes = {
   user: PropTypes.shape({}),
