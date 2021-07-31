@@ -12,6 +12,15 @@ function App() {
       <div>
         <img className="app-contentImage" src="image.jpg" alt="image" />
       </div>
+      <div className="app-separation">
+        <div className="app-separationContent" >
+          <img className="app-separationImage" src="separation1.jpg" alt="image" />
+        </div>
+        <div className="app-separationContent" >
+          <h3 className="app-separationSubtitle">"Pleasure is the flower that passes; remembrance, the lasting perfume"</h3>
+          <Button label="See more here" />
+        </div>
+      </div>
       <h1 className="app-title">Trending right now</h1>
       <div className="app-trendingItems">
         <div className="app-trendingItemsContent" >
