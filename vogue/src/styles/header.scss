@@ -1,6 +1,5 @@
 .header {
   $self: &;
-
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 15px 20px;
@@ -15,17 +14,13 @@
   &-optionSection{
     width: 47%;
     align-items: center;
-
   }
+  &-image{
+       height: 30px;
+    }
 
 }
-img{
-   height: 30px;
-}
-svg {
-  display: inline-block;
-  vertical-align: top;
-}
+
 
 h1 {
   font-weight: 900;
@@ -43,6 +38,7 @@ a {
   font-weight: 700;
   font-size: 13px;
 }
+
 a:hover{
   color:rgb(166, 5, 5);
 }

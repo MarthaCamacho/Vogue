@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Button } from './Button';
+import { Icon } from './Icon';
 import { Nav } from './Nav';
 import '../styles/header.scss';
 
@@ -42,12 +42,11 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => {
     <header>
       <div className="header">
         <div className="header-titleSection">
-          <img src="logoVogue.svg" alt="Logo" />
+          <img className="header-image" src="logoVogue.svg" alt="Logo" />
         </div>
         <div className="header-optionSection">
-          <a href='#'>SIGN IN</a>
-          <a href='#'>SUSCRIBE</a>
-          <img src="searchIcon.svg" alt="SearchIcon" />
+          <a href='#'><Icon iconUrl="userIcon.svg"/></a>
+          <a href='#'><Icon iconUrl="shoppingCarIcon.svg"/></a>
         </div>
       </div>
       <Nav itemsNav={itemsNav} />
