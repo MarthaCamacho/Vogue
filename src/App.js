@@ -1,7 +1,8 @@
 import React from 'react'
 import { Button } from './components/Button';
 import { Header } from './components/Header';
-import '../src/styles/app.scss';
+import '../src/styles/index.scss';
+
 
 // https://icon-icons.com/es/icono/b%C3%BAsqueda-magnifing-de-vidrio-localizar-encontrar/108884
 
@@ -143,6 +144,11 @@ function App() {
           <Button label="See more here" />
         </div>
       </div>
+      <div class="pure-g">
+        <div class="pure-u-1-3"><p>Thirds</p></div>
+        <div class="pure-u-1-3"><p>Thirds</p></div>
+        <div class="pure-u-1-3"><p>Thirds</p></div>
+    </div>
     </div>
   );
 }

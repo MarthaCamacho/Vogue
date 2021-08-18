@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import '../styles/icon.scss';
+import '../styles/index.scss';
 
 export const Icon = ({iconUrl}) => {
     return (
