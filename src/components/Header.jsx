@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Icon } from './Icon';
 import { Nav } from './Nav';
-import '../styles/header.scss';
+import '../styles/index.scss';
 
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => {
