@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { Icon } from './Icon';
 import { Nav } from './Nav';
+import { Link } from 'react-router-dom';
 import '../styles/index.scss';
 
 
@@ -45,8 +45,8 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => {
           <img className="header-image" src="logoVogue.svg" alt="Logo" />
         </div>
         <div className="header-optionSection">
-          <a href='#'><Icon iconUrl="userIcon.svg"/></a>
-          <a href='#'><Icon iconUrl="shoppingCarIcon.svg"/></a>
+          <Link to="/Login"><Icon iconUrl="userIcon.svg" /></Link>
+          <a href='#'><Icon iconUrl="shoppingCarIcon.svg" /></a>
         </div>
       </div>
       <Nav itemsNav={itemsNav} />
