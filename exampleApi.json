@@ -1,0 +1,78 @@
+{
+  "exampleApi": {
+    "cards": [
+      {
+        "id": 1,
+        "image": "https://images.pexels.com/photos/4626207/pexels-photo-4626207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "name": "Blazer Electric",
+        "price": 2.850
+      },
+      {
+        "id": 2,
+        "image": "https://images.pexels.com/photos/7664395/pexels-photo-7664395.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "name": "Purple Book",
+        "price": 45.3
+      },
+      {
+        "id": 3,
+        "image": "https://images.pexels.com/photos/5690230/pexels-photo-5690230.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "name": "Beauty Flower",
+        "price": 1.89
+      },
+      {
+        "id": 4,
+        "image": "https://images.pexels.com/photos/7537830/pexels-photo-7537830.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "name": "Beauty Flower",
+        "price": 1.89
+      },
+      {
+        "id": 5,
+        "image": "https://images.pexels.com/photos/3810552/pexels-photo-3810552.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "name": "Blazer Electric",
+        "price": 2.850
+      },
+      {
+        "id": 6,
+        "image": "https://images.pexels.com/photos/9226518/pexels-photo-9226518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "name": "Purple Book",
+        "price": 45.3
+      },
+      {
+        "id": 7,
+        "image": "https://images.pexels.com/photos/4626207/pexels-photo-4626207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "name": "Blazer Electric",
+        "price": 2.850
+      },
+      {
+        "id": 8,
+        "image": "https://images.pexels.com/photos/7664395/pexels-photo-7664395.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "name": "Purple Book",
+        "price": 45.3
+      },
+      {
+        "id": 9,
+        "image": "https://images.pexels.com/photos/5690230/pexels-photo-5690230.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "name": "Beauty Flower",
+        "price": 1.89
+      },
+      {
+        "id": 10,
+        "image": "https://images.pexels.com/photos/7537830/pexels-photo-7537830.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "name": "Beauty Flower",
+        "price": 1.89
+      },
+      {
+        "id": 11,
+        "image": "https://images.pexels.com/photos/3810552/pexels-photo-3810552.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "name": "Blazer Electric",
+        "price": 2.850
+      },
+      {
+        "id": 12,
+        "image": "https://images.pexels.com/photos/9226518/pexels-photo-9226518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "name": "Purple Book",
+        "price": 45.3
+      }
+    ]
+  }
+}

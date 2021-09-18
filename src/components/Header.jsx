@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import '../styles/index.scss';
 
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => {
+export const Header = ({ user, onLogin, onLogout, onCreateAccount, withoutNav }) => {
   const itemsNav = [
     {
       linkItem: '#',
@@ -39,17 +39,24 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => {
   ]
 
   return (
-    <header>
-      <div className="header">
+    <header className="header">
+      <div className="header-mainSection">
         <div className="header-titleSection">
-          <img className="header-image" src="logoVogue.svg" alt="Logo" />
+          <Link to="/">
+            <img className="header-image" src="logoVogue.svg" alt="Logo" />
+          </Link>
         </div>
-        <div className="header-optionSection">
-          <Link to="/Login"><Icon iconUrl="userIcon.svg" /></Link>
-          <a href='#'><Icon iconUrl="shoppingCarIcon.svg" /></a>
-        </div>
+        {
+          onLogin ?
+            null
+            :
+            <div className="header-optionSection">
+              <Link to="/Login"><Icon iconUrl="userIcon.svg" /></Link>
+              <a href='#'><Icon iconUrl="shoppingCarIcon.svg" /></a>
+            </div>
+        }
       </div>
-      <Nav itemsNav={itemsNav} />
+      {withoutNav ? null : <Nav itemsNav={itemsNav} />}
     </header>
   );
 };
@@ -63,4 +70,5 @@ Header.propTypes = {
 
 Header.defaultProps = {
   user: null,
+  onLogin: false,
 };
