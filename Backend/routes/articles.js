@@ -1,5 +1,5 @@
-const {Router} = require('express');
-const router = Router();
+const express = require('express');
+const router = express.Router();
 
 const Article = require('../models/articles');//encapsulando modelo de datos de la BD
 
@@ -21,11 +21,12 @@ router.post('/', async (req, res) => {
 });
 
 router.put('/:id', async (req, res) => {
-    res.json({status: 'Article updated'});
+    res.json({message: 'Article updated'});
 });
 
 //borrar datos
 router.delete('/:id', async (req, res) => {
+    await Article.findByIdAndRemove(req.params.id);
     res.json({message: 'Article deleted'});
 });
 

@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
+const URI = 'mongodb://localhost/vogue';
 
 //conexión a la base de datos
-mongoose.connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true
-})
-    .then(db => console.log('DB is connected'+db))
+mongoose.connect(URI)
+    .then(db => console.log('DB is connected'))
     .catch(err => console.error(err));
+
+module.exports = mongoose;

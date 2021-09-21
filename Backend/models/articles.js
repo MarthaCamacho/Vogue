@@ -4,4 +4,4 @@ const ArticleSchema = new Schema({
     
 });
 
-module.exports(model('User',ArticleSchema));
+module.exports = (model('User',ArticleSchema));
