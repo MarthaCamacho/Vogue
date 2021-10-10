@@ -1,7 +1,7 @@
 import React from 'react'
-import '../src/styles/index.scss';
+import '../styles/index.scss';
 
-const Section = () => {
+export const Section = () => {
     return (
         <div className="section">
             <div className="section-content" >
@@ -19,4 +19,3 @@ const Section = () => {
         </div>
     );
 };
-export default Section;

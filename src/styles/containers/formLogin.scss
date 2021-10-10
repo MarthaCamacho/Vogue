@@ -1,0 +1,42 @@
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 70px;
+    background-color: rgba(0, 0, 0, 0.315);
+    border-radius: 10px;
+ 
+    &-title{
+        font-size: 50px;
+        margin-bottom: 50px;
+        color: white;
+        font-weight: 600;
+    }
+    &-label {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+    &-input {
+        font-size: 16px;
+        margin-bottom: 30PX;
+        border: none;
+        color: white;
+        border-bottom: 1px solid white;
+        padding: 10px 0;
+        background-color: transparent;
+        outline: none;
+        width: 250px;
+    }
+
+    &-textSecond{
+        color: white;
+        font-size: 14px;
+
+    }
+    ::placeholder {
+        color: white;
+    }
+}

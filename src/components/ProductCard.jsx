@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react'
-import useInitialState from '../hooks/useInitialState';
+import React from 'react'
 import '../styles/index.scss'
 
 export const ProductCard = (props) => {

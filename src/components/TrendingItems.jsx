@@ -1,7 +1,7 @@
 import React from 'react';
-import '../src/styles/index.scss';
+import '../styles/index.scss';
 
-const TrendingItems = () => {
+export const TrendingItems = () => {
     return (
         <div className="trendingItems">
             <div className="trendingItems-content" >
@@ -12,5 +12,3 @@ const TrendingItems = () => {
         </div>
     );
 };
-
-export default TrendingItems;
