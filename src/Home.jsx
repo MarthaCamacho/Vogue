@@ -19,7 +19,7 @@ const Home = () => {
       </div>
       <Section/>
       <TrendingItems/>
-      <ProductBlock {...initialState}/>
+      {/* <ProductBlock {...initialState}/> */}
     </div>
   );
 }
